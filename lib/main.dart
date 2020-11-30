@@ -22,7 +22,7 @@ class _WelcomeState extends State<WeatherApp> {
               Container(
                 margin:EdgeInsets.symmetric(horizontal: 25, vertical: 10),
                 child:Text("Weather App", style: TextStyle(
-                  fontSize: 40,
+                  fontSize: 35,
                   color: Colors.blue[500],
                   fontWeight: FontWeight.bold,
                 ),
@@ -33,22 +33,22 @@ class _WelcomeState extends State<WeatherApp> {
                 ),
               ),
               Container(
-                margin: EdgeInsets.symmetric(horizontal: 25.0, vertical:10.0),
+                margin: EdgeInsets.symmetric(horizontal: 25.0, vertical:15.0),
                 child: Text("You are in :",style: TextStyle(
                   fontSize: 25,
-                  color: Colors.blue[500],
+                  color: Colors.blue,
                   fontWeight: FontWeight.bold,
                 ),
                 ),
               ),
               Container(
-                margin: EdgeInsets.symmetric(horizontal: 25.0, vertical: 10.0),
+                margin: EdgeInsets.symmetric(horizontal: 25.0, vertical: 15.0),
                 child: Row(
                   children: <Widget>[
                     Container(
                       child: Text("Amritsar",style: TextStyle(
                         fontSize: 32,
-                        color: Colors.blue[500],
+                        color: Colors.blue[700],
                         fontWeight: FontWeight.bold,
                       ),
                       ),
@@ -64,14 +64,14 @@ class _WelcomeState extends State<WeatherApp> {
                 ),
               ),
               Card(
-                margin:EdgeInsets.symmetric(horizontal: 25, vertical: 10),
+                margin:EdgeInsets.symmetric(horizontal: 25, vertical: 15),
                 color: Colors.white,
                 child: ListTile(
                   leading: Icon(
-                    Icons.wb_sunny,
-                    color: Colors.yellow,
+                    Icons.wb_cloudy,
+                    color: Colors.blueGrey,
                   ),
-                  title: Text("TEMP: 25 c"),
+                  title: Text("TEMP: 16 C"),
                 ),
               ),
             ],
