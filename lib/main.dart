@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -17,9 +18,12 @@ class _WelcomeState extends State<WeatherApp> {
         body: SafeArea(
           child: Column(
             children: <Widget>[
+              // Container(
+              //   child:Text("HELLO World!"),
+              // ),
               Container(
-                child:Text("HELLO World!"),
-              )
+                child: Image.asset('images/pic.jpg' ,width:300,height:100),
+              ),
             ],
           ),
         ),
