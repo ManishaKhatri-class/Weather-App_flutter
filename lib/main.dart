@@ -1,3 +1,4 @@
+
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
@@ -18,11 +19,60 @@ class _WelcomeState extends State<WeatherApp> {
         body: SafeArea(
           child: Column(
             children: <Widget>[
-              // Container(
-              //   child:Text("HELLO World!"),
-              // ),
               Container(
-                child: Image.asset('images/pic.jpg' ,width:300,height:100),
+                margin:EdgeInsets.symmetric(horizontal: 25, vertical: 10),
+                child:Text("Weather App", style: TextStyle(
+                  fontSize: 40,
+                  color: Colors.blue[500],
+                  fontWeight: FontWeight.bold,
+                ),
+                ),
+              ),
+              Container(
+                child: Image.asset("images/pic.png"
+                ),
+              ),
+              Container(
+                margin: EdgeInsets.symmetric(horizontal: 25.0, vertical:10.0),
+                child: Text("You are in :",style: TextStyle(
+                  fontSize: 25,
+                  color: Colors.blue[500],
+                  fontWeight: FontWeight.bold,
+                ),
+                ),
+              ),
+              Container(
+                margin: EdgeInsets.symmetric(horizontal: 25.0, vertical: 10.0),
+                child: Row(
+                  children: <Widget>[
+                    Container(
+                      child: Text("Amritsar",style: TextStyle(
+                        fontSize: 32,
+                        color: Colors.blue[500],
+                        fontWeight: FontWeight.bold,
+                      ),
+                      ),
+                    ),
+                    Container(
+                      child: Icon(
+                        Icons.location_on,
+                        color: Colors.red,
+                        size: 32,
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+              Card(
+                margin:EdgeInsets.symmetric(horizontal: 25, vertical: 10),
+                color: Colors.white,
+                child: ListTile(
+                  leading: Icon(
+                    Icons.wb_sunny,
+                    color: Colors.yellow,
+                  ),
+                  title: Text("TEMP: 25 c"),
+                ),
               ),
             ],
           ),
